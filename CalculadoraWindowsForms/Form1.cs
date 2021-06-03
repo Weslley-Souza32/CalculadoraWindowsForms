@@ -64,11 +64,6 @@ namespace CalculadoraWindowsForms
             txtTelaResultado.Text += "0";
         }
 
-        private void btnPonto_Click(object sender, EventArgs e)
-        {
-            txtTelaResultado.Text += ".";
-        }
-
         private void btnVirgula_Click(object sender, EventArgs e)
         {
             txtTelaResultado.Text += ",";
@@ -98,7 +93,7 @@ namespace CalculadoraWindowsForms
             txtTelaResultado.Text = resultado.ToString();
 
         }
-
+        #region Operadores basicos
         private void btnSubtracao_Click(object sender, EventArgs e)
         {
             numero1 = Convert.ToDouble(txtTelaResultado.Text);
@@ -140,6 +135,7 @@ namespace CalculadoraWindowsForms
             lblCalculo.Visible = true;
             txtTelaResultado.Clear();
         }
+        #endregion
 
         private void btnLimparTudo_Click(object sender, EventArgs e)
         {
