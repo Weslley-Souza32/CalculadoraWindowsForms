@@ -50,6 +50,7 @@ namespace CalculadoraWindowsForms
             this.btnVirgula = new System.Windows.Forms.Button();
             this.txtTelaResultado = new System.Windows.Forms.TextBox();
             this.lblCalculo = new System.Windows.Forms.Label();
+            this.btnRaizQuadrada = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn0
@@ -292,6 +293,18 @@ namespace CalculadoraWindowsForms
             this.lblCalculo.Text = "label1";
             this.lblCalculo.Visible = false;
             // 
+            // btnRaizQuadrada
+            // 
+            this.btnRaizQuadrada.BackColor = System.Drawing.Color.White;
+            this.btnRaizQuadrada.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRaizQuadrada.BackgroundImage")));
+            this.btnRaizQuadrada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRaizQuadrada.Location = new System.Drawing.Point(13, 122);
+            this.btnRaizQuadrada.Name = "btnRaizQuadrada";
+            this.btnRaizQuadrada.Size = new System.Drawing.Size(60, 40);
+            this.btnRaizQuadrada.TabIndex = 21;
+            this.btnRaizQuadrada.UseVisualStyleBackColor = false;
+            this.btnRaizQuadrada.Click += new System.EventHandler(this.btnRaizQuadrada_Click);
+            // 
             // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -299,7 +312,8 @@ namespace CalculadoraWindowsForms
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(345, 454);
+            this.ClientSize = new System.Drawing.Size(341, 439);
+            this.Controls.Add(this.btnRaizQuadrada);
             this.Controls.Add(this.lblCalculo);
             this.Controls.Add(this.txtTelaResultado);
             this.Controls.Add(this.btnVirgula);
@@ -353,6 +367,7 @@ namespace CalculadoraWindowsForms
         private System.Windows.Forms.Button btnVirgula;
         private System.Windows.Forms.TextBox txtTelaResultado;
         private System.Windows.Forms.Label lblCalculo;
+        private System.Windows.Forms.Button btnRaizQuadrada;
     }
 }
 

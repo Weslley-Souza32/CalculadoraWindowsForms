@@ -135,6 +135,13 @@ namespace CalculadoraWindowsForms
             lblCalculo.Visible = true;
             txtTelaResultado.Clear();
         }
+
+        private void btnRaizQuadrada_Click(object sender, EventArgs e)
+        {
+            numero1 = Convert.ToDouble(txtTelaResultado.Text);
+            txtTelaResultado.Text = Math.Sqrt(Convert.ToDouble(numero1)).ToString();
+            
+        }
         #endregion
 
         private void btnLimparTudo_Click(object sender, EventArgs e)
@@ -142,7 +149,6 @@ namespace CalculadoraWindowsForms
             txtTelaResultado.Clear();
             lblCalculo.Text = string.Empty;
             
-            //txtTelaResultado.Text = "0";
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -154,5 +160,6 @@ namespace CalculadoraWindowsForms
             
             lblCalculo.Text = lblCalculo.Text.Remove(lblCalculo.Text.Length - 1);
         }
+
     }
 }
